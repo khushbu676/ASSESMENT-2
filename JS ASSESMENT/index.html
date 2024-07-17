@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider">
+        <!-- Slide Container -->
+        <div class="slides">
+            <div class="slide">
+                <img src="IMAGES/IMAGE1.jpg" alt="Image 1">
+                <div class="slide-number">1/4</div>
+                <div class="caption">Caption 1</div>
+            </div>
+            <div class="slide">
+                <img src="IMAGES/IMAGE 2.jpg" alt="Image 2">
+                <div class="slide-number">2/4</div>
+                <div class="caption">Caption 2</div>
+            </div>
+            <div class="slide">
+                <img src="IMAGES/IMAGE 3.jpg" alt="Image 3">
+                <div class="slide-number">3/4</div>
+                <div class="caption">Caption 3</div>
+            </div>
+            <div class="slide">
+                <img src="IMAGES/image4.jpg" alt="Image 4">
+                <div class="slide-number">4/4</div>
+                <div class="caption">Caption 4</div>
+            </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        <!-- Dots -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
